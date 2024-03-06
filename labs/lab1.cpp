@@ -89,7 +89,7 @@ static F& get_x(std::size_t k) {
 	return x<F>[k].value;
 }
 }
-#include <bitset>
+
 int main() {
 	std::cout << std::format(
 		"Równanie: a*x[k-1] - 10*x[k] + a*x[k+1] = 0\n"
