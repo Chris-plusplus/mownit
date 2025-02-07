@@ -1,0 +1,13 @@
+#include <matrix/eye.hpp>
+
+namespace matrix {
+
+matf eye(size_t n) noexcept {
+	auto result = matf(n, vecf(n, 0));
+	for (size_t i = 0; i != n; ++i) {
+		result[i][i] = 1.0;
+	}
+	return std::move(result);
+}
+
+}

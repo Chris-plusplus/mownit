@@ -1,0 +1,1 @@
+. "C:\studia\mownit\cmake\conan_files\Debug\deactivate_conanrunenv-debug.sh"

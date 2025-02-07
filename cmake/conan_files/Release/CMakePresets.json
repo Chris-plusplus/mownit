@@ -1,0 +1,46 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-release",
+            "displayName": "'conan-release' config",
+            "description": "'conan-release' configure using 'MinGW Makefiles' generator",
+            "generator": "MinGW Makefiles",
+            "cacheVariables": {
+                "CMAKE_SH": "CMAKE_SH-NOTFOUND",
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "OpenBLAS_HOME": "C:\\Users\\Chris\\.conan2\\p\\openb191c4c53bb898\\p"
+            },
+            "toolchainFile": "conan_toolchain.cmake",
+            "binaryDir": "C:\\studia\\mownit\\cmake\\conan_files\\Release"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "jobs": 12
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "environment": {
+                "OPENSSL_MODULES": "C:\\Users\\Chris\\.conan2\\p\\b\\opensc09aa5a637f10\\p\\lib\\ossl-modules",
+                "OpenBLAS_HOME": "C:\\Users\\Chris\\.conan2\\p\\openb191c4c53bb898\\p"
+            }
+        }
+    ]
+}

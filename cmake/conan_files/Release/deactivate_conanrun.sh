@@ -1,0 +1,1 @@
+. "C:\studia\mownit\cmake\conan_files\Release\deactivate_conanrunenv-release.sh"
